@@ -5,7 +5,7 @@ This simulation environment has been used by https://arxiv.org/abs/2102.08417.
 First of all download the folder named "code" which includes most of the files mentioned below. 
 
 ## 1. NRP installation
-________________________________
+
 
 So far this experiment has been executed on Ubuntu 16.04 LTS with the NRP version 2.3.
 A short test has also been run with Ubuntu 18.04 LTS.
@@ -18,7 +18,7 @@ https://www.neurorobotics.net/
 
 
 ## 2. NRP modifications
-__________________________________
+
 
 ### 2.1 Dynamic Vision Sensor (DVS) model
 
