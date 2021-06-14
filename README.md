@@ -19,6 +19,7 @@ https://www.neurorobotics.net/
 
 ## 2. NRP modifications
 
+After you have finished the local from source install following the instructions at the link above you have to modify some parts of the platform.
 
 ### 2.1 Dynamic Vision Sensor (DVS) model
 
