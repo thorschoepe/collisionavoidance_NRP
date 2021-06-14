@@ -46,14 +46,16 @@ You have to add the spikebot model to your NRP install at the two following path
 NRP/Models:
 
 Add a folder called spikebot including the .config and .sdf file of 
-the spikebot model which can be found in "synergy" at:
-spiking-insect-vision/docs/nrp_collision_avoidance/code/spikebot/spikebot_model/
+the spikebot model which can be found at:
+collisionavoidance_NRP/code/spikebot_model/
+
 
 NRP/Models/robots/:
 
 Add a folder called spikebot including the .config and .sdf file of 
 the spikebot model which can be found in "synergy" at:
-spiking-insect-vision/docs/nrp_collision_avoidance/code/spikebot/spikebot_model/
+collisionavoidance_NRP/code/spikebot_model/
+
 
 2.3 Obstacle texture
 
@@ -97,9 +99,10 @@ are not correctly referred  to in the _init__.py file. Because of that you have
 to replace the _init__.py file at the NRP location
 NRP/ExperimentControl/hbp_nrp_excontrol/hbp_nrp_excontrol/nrp_states/
 
-with the _init__.py file given at the "synergy" svn repository:
+with the _init__.py file given at:
 
-spiking-insect-vision/docs/nrp_collision_avoidance/code/nrp_modified/
+collisionavoidance_NRP/code/nrp_modified/
+
 
 After that the state machine which is used to create a random environment
 and monitor, if the robot craches into any object or left the arena, should 
@@ -111,8 +114,8 @@ work flawlessly.
 Since the spikebot brain is using the spiking elementary motion detector/Time difference encoder
 in nest you have to add this model to the nest environment.
 
-The nest sEMD/TDE model and a test script for a single sEMD can be found in "synergy" at:
-/home/neuro/Documents/spiking-insect-vision/docs/nest_collision_avoidance
+The nest sEMD/TDE model and a test script for a single sEMD can be found at:
+collisionavoidance_NRP/code/nest_semd_model/
 To add this model to the nest environment follow these instructions, but first read the ATTENTION
 text below: 
 https://nest.github.io/nest-simulator/extension_modules
@@ -142,9 +145,9 @@ password: password
 The steps above are also explained on the NRP webpage
 
 To add the latest NRP spikebot experiment go to "My experiments" -> Import zip
-All spikebot versions I've created so far are located at:
+Upload the zip file from:
 
-/spiking-insect-vision/docs/nrp_collision_avoidance/code/spikebot/backup/
+collisionavoidance_NRP/code/experiments/spikebot_cluttered_environment.zip
 
 You can run any version directly in the browser by simply going to My experiments, clicking on the experiment and clicking Launch.
 If you want to execute a series of experiments combined with statistical analysis I recommend the environment I created explained
@@ -156,9 +159,10 @@ in section 4 below.
 ____________________________________________________________________________________
 
 If you want to use the automated environment for executing the simulations, statistics
-and saving data, copy the synergy folder spiking-insect-vision/docs/nrp_collision_avoidance with all its content to a subdirectory of your choice.
-Then, you create the following subdirectories in the folder "nrp_collision_avoidance":
+and saving data, copy the folder"code" with all its content to a subdirectory of your choice.
+Then, you create the following subdirectories. You open a terminal while being in the folder "code".
 
+cd ..
 mkdir data
 cd data
 mkdir "run_folder"
@@ -203,25 +207,24 @@ password: password
 The steps above are also explained on the NRP webpage
 
 To add the NRP spikebot experiment of your choice go to "My experiments" -> Import zip
-All spikebot versions I've created so far are located at:
+You can use this zip file as a start point:
 
-/spiking-insect-vision/docs/nrp_collision_avoidance/code/spikebot/backup/
+collisionavoidance_NRP/code/experiments/spikebot_cluttered_environment.zip
 
 After you've added the experiment to the NRP it will be given a name.
 You can see the name in the browser at Experiment files, Experiments on the left side panel.
-This name you will have to set as the "run_name" variable string in step 4.2 below.
+You have to set this name as the "run_name" variable string in step 4.2 below.
 
 
 4.2 Two variables have to be set for each experiment, the name of the experiment "run_name"
 and the name of the folder where the data will be saved "run_folder". You set both of these
 variables in the script code/virtual_coach/number_collision_avoidance.py
-As long as you choose a backup at code/spikebot/backup which is later or equal the 26 of May 2020 you only have
-to set the variable in number_collision_avoidance.py.
 Always check before running that the variable name fits the required destination.
-If you want to run various different experiments use a backup version later or equal the 10th of June or the version 200526_best_spikebot_preformance_more_descriptions.zip .
-Here you can set the "run_folder" variable and the "run_name" variable as an array in code/virtual_coach/number_collision_avoidance.py.
-Then, the code will automatically run all these experiments one after the other. The number of repetitions of each experiment is definde
+You can set the "run_folder" variable and the "run_name" variable as an array in code/virtual_coach/number_collision_avoidance.py.
+Then, the code will automatically run all these experiments one after the other. The number of repetitions of each experiment is defined
 in number_collision_avoidance.py within the variable "number_repetitions".
+
+Before running the experiment make sure that all path variables are set correctly. Hence, check all files in the experiment zip, and the folder code/virtual_coach for wrong path variables.
 
 
 4.3 Run the automated environment (virtual coach)
@@ -241,11 +244,9 @@ not finishing properly. Always make sure that the stopping time in random_enviro
 experiment_configuration.exc. This probably prevents crashes due to the state machine not stopping properly.
 
 
-4.2 I've created a few scripts to characterize and plot the data afterwards. (spiking-insect-vision/docs/nrp_collision_avoidance/code/statistics/, spiking-insect-vision/docs/nrp_collision_avoidance/code/plots)
+4.2 I've created a few scripts to characterize and plot the data afterwards. (code/statistics/, code/plots)
 You can execute all of these scripts at once by running the code "run_modules.py" at:
-spiking-insect-vision/docs/nrp_collision_avoidance/code/run_modules/run_modules.py
-Before doing that you have to set the "run_folder" varaible in "code/run_modules/number_run.py".
+code/run_modules/run_modules.py
+Before doing that you have to set the "run_folder" variable in "code/run_modules/number_run.py".
 This variable defines which data from which folder will be analyzed.
 The data analysis might take a few hours depending on the amount of data you have collected.
-Before starting a run read the next paragraph 5 Data belonging since wrong data path variables
-can lead to a mess up in your data.
