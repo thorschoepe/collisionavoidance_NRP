@@ -131,7 +131,6 @@ export LD_LIBRARY_PATH=~/.local/lib/nest/:$LD_LIBRARY_PATH
 
 
 ## 3. Use the NRP platform
-____________________________________________
 
 Open a terminal and run:
 
@@ -159,7 +158,7 @@ in section 4 below.
 
 
 ## 4. Use the automated environment I have created for statistics and running experiments
-____________________________________________________________________________________
+
 
 If you want to use the automated environment for executing the simulations, statistics
 and saving data, copy the folder"code" with all its content to a subdirectory of your choice.
