@@ -54,7 +54,7 @@ collisionavoidance_NRP/code/spikebot_model/
 NRP/Models/robots/:
 
 Add a folder called spikebot including the .config and .sdf file of 
-the spikebot model which can be found in "synergy" at:
+the spikebot model which can be found at:
 collisionavoidance_NRP/code/spikebot_model/
 
 
@@ -106,14 +106,13 @@ collisionavoidance_NRP/code/nrp_modified/
 
 
 After that the state machine which is used to create a random environment
-and monitor, if the robot craches into any object or left the arena, should 
+and monitors, if the robot craches into any object or left the arena, should 
 work flawlessly. 
 
 
 ### 2.5 sEMD/TDE nest model
 
-Since the spikebot brain is using the spiking elementary motion detector/Time difference encoder
-in nest you have to add this model to the nest environment.
+Since the spikebot brain is using the nest version of the spiking elementary motion detector/Time difference encoder you have to add this model to the nest environment.
 
 The nest sEMD/TDE model and a test script for a single sEMD can be found at:
 collisionavoidance_NRP/code/nest_semd_model/
@@ -153,6 +152,8 @@ Upload the zip file from:
 collisionavoidance_NRP/code/experiments/spikebot_cluttered_environment.zip
 
 You can run any version directly in the browser by simply going to My experiments, clicking on the experiment and clicking Launch.
+If you launch the experiment the first time the script random_experiment.exd will complain that the file number_experiment.npy
+does not exist. In case you do not use the automated environment you can just set num=0 in line 36, 81 and 94 of the script random_environment.exd.
 If you want to execute a series of experiments combined with statistical analysis I recommend the environment I created explained
 in section 4 below.
 
