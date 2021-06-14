@@ -1,0 +1,9 @@
+/home/neuro/.local/lib/nest/mymodule.so
+/home/neuro/.local/lib/nest/libmymodule.so
+/home/neuro/.local/include/mymodule.h
+/home/neuro/.local/share/nest/sli/example.sli
+/home/neuro/.local/share/nest/sli/mymodule-init.sli
+/home/neuro/.local/share/doc/nest/help/helpindex.hlp
+/home/neuro/.local/share/doc/nest/help/cc/iaf_psc_exp.html
+/home/neuro/.local/share/doc/nest/help/cc/iaf_psc_exp.hlp
+/home/neuro/.local/share/doc/nest/help/helpindex.html
