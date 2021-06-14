@@ -1,0 +1,3079 @@
+<sdf version='1.6'>
+  <world name='default'>
+    <model name='ground_plane'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>65535</collide_bitmask>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics name='default_physics' default='0' type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <light name='user_directional_light_0' type='directional'>
+      <pose frame=''>0.351978 -0.363043 1 0 -0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>1</cast_shadows>
+    </light>
+    <state world_name='default'>
+	<sim_time>3061 547000000</sim_time>
+      <real_time>264 458181082</real_time>
+      <wall_time>1592432612 467738075</wall_time>
+      <iterations>263624</iterations>
+      <model name='Color Tutorial Model'>
+        <pose frame=''>0 8 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>0 8 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone'>
+        <pose frame=''>-2 8 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-2 8 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_0'>
+        <pose frame=''>2 8 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>2 8 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_1'>
+        <pose frame=''>0 -8 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>0 -8 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_2'>
+        <pose frame=''>-2 -8 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-2 -8 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_3'>
+        <pose frame=''>2 -8 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>2 -8 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone'>
+        <pose frame=''>3 -2 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>3 -2 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_0'>
+        <pose frame=''>3 0 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>3 0 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_1'>
+        <pose frame=''>3 2 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>3 2 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1'>
+        <pose frame=''>-22 -1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-22 -1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone'>
+        <pose frame=''>-24 -1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-24 -1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_0'>
+        <pose frame=''>-24 1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-24 1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1'>
+        <pose frame=''>-26 -1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-26 -1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone'>
+        <pose frame=''>-28 -1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-28 -1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_0'>
+        <pose frame=''>-28 1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-28 1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_1'>
+        <pose frame=''>-30 1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-30 1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2'>
+        <pose frame=''>-30 -1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-30 -1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone'>
+        <pose frame=''>-32 -1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-32 -1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_0'>
+        <pose frame=''>-32 1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-32 1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_1'>
+        <pose frame=''>-34 -1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-34 -1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_1_clone'>
+        <pose frame=''>-36 -1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-36 -1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_1_clone_0'>
+        <pose frame=''>-36 1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-36 1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_1_clone_1'>
+        <pose frame=''>-38 -1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-38 -1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_1_clone_2'>
+        <pose frame=''>-38 1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-38 1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_1_clone_clone'>
+        <pose frame=''>-40 -1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-40 -1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_1_clone_clone_0'>
+        <pose frame=''>-40 1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-40 1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_1_clone_clone_1'>
+        <pose frame=''>-42 -1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-42 -1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_1_clone_clone_2'>
+        <pose frame=''>-42 1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-42 1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_2'>
+        <pose frame=''>-34 1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-34 1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_2'>
+        <pose frame=''>-26 1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-26 1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_2'>
+        <pose frame=''>-22 1 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-22 1 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone'>
+        <pose frame=''>3 -4 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>3 -4 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone_0'>
+        <pose frame=''>3 4 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>3 4 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone'>
+        <pose frame=''>-9 -4 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-9 -4 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_0'>
+        <pose frame=''>-9 -2 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-9 -2 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_1'>
+        <pose frame=''>-9 0 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-9 0 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_2'>
+        <pose frame=''>-9 2 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-9 2 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_3'>
+        <pose frame=''>-9 4 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-9 4 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_3_clone'>
+        <pose frame=''>-9 6 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-9 6 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_3_clone_0'>
+        <pose frame=''>-9 8 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-9 8 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_4'>
+        <pose frame=''>3.0007 6 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>3.0007 6 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_5'>
+        <pose frame=''>3 8 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>3 8 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_clone'>
+        <pose frame=''>-9 -6 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-9 -6 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_clone_0'>
+        <pose frame=''>-9 -8 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-9 -8 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone_clone'>
+        <pose frame=''>-3 0 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-3 0 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone_clone_0'>
+        <pose frame=''>3 -6 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>3 -6 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone_clone_1'>
+        <pose frame=''>3 -8 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>3 -8 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone_clone_2'>
+        <pose frame=''>-3 -7 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-3 -7 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone_clone_clone'>
+        <pose frame=''>-3 -5 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-3 -5 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_4_clone_clone_clone_clone_clone_0_clone_0'>
+        <pose frame=''>-3 7 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-3 7 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_clone'>
+        <pose frame=''>-4 8 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-4 8 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_clone_0'>
+        <pose frame=''>-6 8 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-6 8 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_clone_1'>
+        <pose frame=''>-8 8 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-8 8 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_clone_2'>
+        <pose frame=''>-4 -8 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-4 -8 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_clone_3'>
+        <pose frame=''>-6 -8 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-6 -8 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Color Tutorial Model_clone_clone_4'>
+        <pose frame=''>-8 -8 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='grating'>
+          <pose frame=''>-8 -8 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ground_plane'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='user_directional_light_0'>
+        <pose frame=''>0.351978 -0.363043 1 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>4.21737 -0.126988 24.1382 -0 1.26343 3.00035</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+    <model name='Color Tutorial Model'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-0.020919 2.98992 0 0 -0 0</pose>
+    </model>
+    <model name='Color Tutorial Model_clone'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-2.04777 2.96495 0 0 -0 0</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_0'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>1.96296 2.99142 0 0 -0 0</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_1'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-0.013905 -2.97298 0 0 -0 0</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_2'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-1.96571 -2.98538 0 0 -0 0</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_3'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>1.92853 -2.95439 0 0 -0 0</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>2.97421 -2.05892 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_0'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>2.97474 -0.045386 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_1'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>2.96183 1.90404 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-21.5464 -0.682612 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_2'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-21.6288 0.138155 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-24.1098 -0.710284 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_0'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-24.011 0.682901 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-25.9364 -0.72022 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_2'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-25.8627 0.643181 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-28.081 -0.606853 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_0'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-28.0225 0.587924 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_1'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-29.9599 0.597969 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-29.9572 -0.619539 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-32.0553 -0.510437 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_0'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-32.0058 0.493756 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_1'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-33.9066 -0.497892 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_2'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-33.9671 0.497374 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_1_clone'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-36.1319 -0.433261 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_1_clone_0'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-36.1316 0.410361 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_1_clone_1'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-38.1151 -0.448622 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_1_clone_2'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-38.1098 0.404865 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_1_clone_clone'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-40.2232 -0.361185 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_1_clone_clone_0'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-40.1723 0.257351 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_1_clone_clone_1'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-42.1 -0.371182 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_3_clone_2_clone_1_clone_1_clone_1_clone_1_clone_2_clone_1_clone_clone_2'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-42.0984 0.271195 0 0 0 -3.14159</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>3.02615 -4.0029 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone_0'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>3.00564 3.92573 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone_clone'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-3.01923 0.004607 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone_clone_clone'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-3.05214 -4.9605 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_clone'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-3.99891 5.01621 0 0 -0 0</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_clone_0'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-6.0068 5.02169 0 0 -0 0</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_clone_1'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-7.97844 5.00835 0 0 -0 0</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_clone_2'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-4.03826 -5.00609 0 0 -0 0</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_clone_3'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-5.97652 -4.97053 0 0 -0 0</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_clone_4'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-7.90693 -4.95196 0 0 -0 0</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-9.02679 -4.01968 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_0'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-9.02667 -2.03446 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_1'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-8.98927 -0.053216 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_2'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-8.99006 1.93327 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_3'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-8.98708 3.91723 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_4'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>3.0007 5.99248 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_5'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>2.99018 7.97974 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_3_clone'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-9.02455 6.00368 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_3_clone_0'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-9.01707 7.94397 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone_clone_clone_0_clone_0'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-2.9532 8.04782 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone_clone_0'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>3.00709 -6.00738 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone_clone_1'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>3.01796 -8.02171 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone_clone_2'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-3.00816 -6.96997 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_clone'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-8.97155 -6.0157 0 0 -0 1.5708</pose>
+    </model>
+    <model name='Color Tutorial Model_clone_4_clone_clone_clone_0_clone_clone_0'>
+      <static>1</static>
+      <link name='grating'>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>2 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <uri>/home/neuro/.gazebo/models/grating_wall/materials/scripts/</uri>
+              <name>RepeatedTexture</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-8.95967 -7.96552 0 0 -0 1.5708</pose>
+    </model>
+  </world>
+</sdf>
