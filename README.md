@@ -1,6 +1,6 @@
 # collisionavoidance_NRP
 
-This repository contains helps you to set up and run a collision avoidance experiment with spiking neural networks in the Neurorobotics Platform (NRP).
+This repository helps you to set up and run a collision avoidance experiment with spiking neural networks in the Neurorobotics Platform (NRP).
 This simulation environment has been used by https://arxiv.org/abs/2102.08417.
 
 1. NRP installation
