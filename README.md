@@ -1,4 +1,4 @@
-# collisionavoidance_NRP
+# collision avoidance in the neurorobotics platform (NRP)
 
 This repository helps you to set up and run a collision avoidance experiment with spiking neural networks in the Neurorobotics Platform (NRP).
 This simulation environment has been used by https://arxiv.org/abs/2102.08417.
@@ -39,7 +39,7 @@ run in user-scripts:
 run in user-scripts:
 ./update_nrp build all 
 
-2.2 Spikebot model
+### 2.2 Spikebot model
 
 You have to add the spikebot model to your NRP install at the two following paths:
 
@@ -57,7 +57,7 @@ the spikebot model which can be found in "synergy" at:
 collisionavoidance_NRP/code/spikebot_model/
 
 
-2.3 Obstacle texture
+### 2.3 Obstacle texture
 
 If you use the state machine function states.SpawnBox from NRP/ExperimentControl/hbp_nrp_excontrol/hbp_nrp_excontrol/nrp_states/_ModelServiceState.py
 and you want to add a specific texture to the boxes you have to refer to a script defining the texture.
@@ -92,7 +92,7 @@ The file contains this:
 The script takes the material grating2.jpg at the location relative to the script ../textures/grating2.jpg
 and repeates the texture four times over each surface. The material has to be called with the name "RepeatedTexture"
 
-2.4 State machine modifications
+### 2.4 State machine modifications
 
 Unfortunately, some of the state machine plugins
 are not correctly referred  to in the _init__.py file. Because of that you have 
@@ -109,7 +109,7 @@ and monitor, if the robot craches into any object or left the arena, should
 work flawlessly. 
 
 
-2.5 sEMD/TDE nest model
+### 2.5 sEMD/TDE nest model
 
 Since the spikebot brain is using the spiking elementary motion detector/Time difference encoder
 in nest you have to add this model to the nest environment.
@@ -130,7 +130,7 @@ export LD_LIBRARY_PATH=~/.local/lib/nest/:$LD_LIBRARY_PATH
 
 
 
-3. Use the NRP platform
+## 3. Use the NRP platform
 ____________________________________________
 
 Open a terminal and run:
@@ -158,7 +158,7 @@ in section 4 below.
 
 
 
-4. Use the automated environment I have created for statistics and running experiments
+## 4. Use the automated environment I have created for statistics and running experiments
 ____________________________________________________________________________________
 
 If you want to use the automated environment for executing the simulations, statistics
@@ -195,7 +195,9 @@ This environment is using the virtual_coach, an NRP program for automatized NRP 
 combined with various python scripts I wrote myself. Before you can execute the virtual_coach to run
 your experiment you have to add the experiment you want to execute to the NRP environment and define a few variables.
 
-4.1 To add the experiment you want to execute to the NRP open a terminal and run:
+### 4.1 Add an experiment
+
+To add the experiment you want to execute to the NRP open a terminal and run:
 
 cle-nginx
 cle-start
@@ -219,7 +221,9 @@ You can see the name in the browser at Experiment files, Experiments on the left
 You have to set this name as the "run_name" variable string in step 4.2 below.
 
 
-4.2 Two variables have to be set for each experiment, the name of the experiment "run_name"
+### 4.2 Set up the environment
+
+Two variables have to be set for each experiment, the name of the experiment "run_name"
 and the name of the folder where the data will be saved "run_folder". You set both of these
 variables in the script code/virtual_coach/number_collision_avoidance.py
 Always check before running that the variable name fits the required destination.
@@ -230,7 +234,7 @@ in number_collision_avoidance.py within the variable "number_repetitions".
 Before running the experiment make sure that all path variables are set correctly. Hence, check all files in the experiment zip, and the folder code/virtual_coach for wrong path variables.
 
 
-4.3 Run the automated environment (virtual coach)
+### 4.3 Run the automated environment (virtual coach)
 
 To run the virtual coach execute: 
 source ~/.opt/platform_venv/bin/activate
@@ -247,7 +251,9 @@ not finishing properly. Always make sure that the stopping time in random_enviro
 experiment_configuration.exc. This probably prevents crashes due to the state machine not stopping properly.
 
 
-4.2 I've created a few scripts to characterize and plot the data afterwards. (code/statistics/, code/plots)
+## 5. Analysis
+
+I've created a few scripts to characterize and plot the data afterwards. (code/statistics/, code/plots)
 You can execute all of these scripts at once by running the code "run_modules.py" at:
 code/run_modules/run_modules.py
 Before doing that you have to set the "run_folder" variable in "code/run_modules/number_run.py".
