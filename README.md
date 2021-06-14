@@ -121,6 +121,7 @@ text below:
 https://nest.github.io/nest-simulator/extension_modules
 
 ATTENTION: Since the neurorobotics platform installs nest to .local the nest install path is:
+
 export NEST_INSTALL_DIR=~/.local
 export LIBRARY_PATH=~/.local/lib:$LIBRARY_PATH
 export LD_LIBRARY_PATH=~/.local/lib/nest/:$LD_LIBRARY_PATH
