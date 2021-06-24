@@ -118,7 +118,7 @@ The nest sEMD/TDE model and a test script for a single sEMD can be found at:
 collisionavoidance_NRP/code/nest_semd_model/
 To add this model to the nest environment follow these instructions, but first read the ATTENTION
 text below: 
-https://nest.github.io/nest-simulator/extension_modules
+https://nest-extension-module.readthedocs.io/en/latest/extension_modules.html
 
 ATTENTION: Since the neurorobotics platform installs nest to .local the nest install path is:
 
